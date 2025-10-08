@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  rider:
+    image: ${DOCKER_REGISTRY:-local}/rider-api:${TAG:-latest}
+    container_name: rider
+    networks:
+      - rider_network
+
+networks:
+  rider_network:
+    driver: bridge

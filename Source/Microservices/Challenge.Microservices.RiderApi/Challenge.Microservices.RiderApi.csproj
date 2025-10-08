@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>4b777260-dc76-4c92-9e39-9b1de1b6f2e0</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..</DockerfileContext>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" />
+		<PackageReference Include="Asp.Versioning.Mvc" />
+		<PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" />
+		<PackageReference Include="AWSSDK.Core" />
+		<PackageReference Include="AWSSDK.Extensions.NETCore.Setup" />
+		<PackageReference Include="AWSSDK.SecurityToken" />
+		<PackageReference Include="AWSSDK.S3" />
+		<PackageReference Include="DocsBRValidator" />
+		<PackageReference Include="FluentValidation" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+		<PackageReference Include="Grpc.AspNetCore" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" />
+		<PackageReference Include="MongoDB.Bson" />
+		<PackageReference Include="MongoDB.Driver" />
+		<PackageReference Include="Serilog" />
+		<PackageReference Include="Serilog.AspNetCore" />
+		<PackageReference Include="Swashbuckle.AspNetCore" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Common\Core\Challenge.Common.Core.Cqrs\Challenge.Common.Core.Cqrs.csproj" />
+		<ProjectReference Include="..\..\Common\Core\Challenge.Common.Core.Response\Challenge.Common.Core.Response.csproj" />
+		<ProjectReference Include="..\..\Common\Core\Challenge.Common.Core.Validation\Challenge.Common.Core.Validation.csproj" />
+		<ProjectReference Include="..\..\Common\Data\Challenge.Common.Data.Mongo\Challenge.Common.Data.Mongo.csproj" />
+		<ProjectReference Include="..\..\Common\Data\Challenge.Common.Data\Challenge.Common.Data.csproj" />
+		<ProjectReference Include="..\..\Common\Messaging\Challenge.Common.Messaging.Grpc\Challenge.Common.Messaging.Grpc\Challenge.Common.Messaging.Grpc.csproj" />
+	</ItemGroup>
+
+</Project>

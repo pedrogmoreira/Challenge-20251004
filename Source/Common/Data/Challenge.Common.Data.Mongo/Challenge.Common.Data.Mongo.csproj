@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MongoDB.Driver" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Challenge.Common.Data\Challenge.Common.Data.csproj" />
+	</ItemGroup>
+
+</Project>

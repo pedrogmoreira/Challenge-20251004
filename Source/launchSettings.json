@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "docker-compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "launchBrowser": true,
+      "launchUrl": "http://localhost:5000/docs",
+      "serviceActions": {
+        "gateway": "StartDebugging",
+        "rider": "StartDebugging",
+        "motorbike": "StartDebugging"
+      }
+    }
+  }
+}
